@@ -36,7 +36,7 @@
                     <TextBlock Grid.Row="1" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10">Gyro Resolution</TextBlock>
                     <TextBox Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" Margin="10" Name="GyroResolutionTextBox">2000</TextBox>
 
-                    <TextBlock Grid.Row="2" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10">AccelerometerResolution (in g)</TextBlock>
+                    <TextBlock Grid.Row="2" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10">Accelerometer <LineBreak/>Resolution (in g)</TextBlock>
                     <TextBox Grid.Row="2" Grid.Column="1" VerticalAlignment="Top" Margin="10" Name="AccelerometerResolution">2</TextBox>
 
                     <TextBlock Grid.Row="3" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10">Is in Gym</TextBlock>
