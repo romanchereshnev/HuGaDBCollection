@@ -1,0 +1,69 @@
+﻿<Window x:Class="CollectionGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:collectionGui="clr-namespace:CollectionGUI"
+        Title="MainWindow" Height="550" Width="925" MouseLeftButtonUp="MainWindow_OnMouseLeftButtonUp">
+    <TabControl>
+        <TabItem Header="Data">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.3*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="*"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Row="1" Grid.Column="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Grid.Row="0" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10">Testee ID</TextBlock>
+                    <TextBox Grid.Row="0" Grid.Column="1" VerticalAlignment="Top" Margin="10" Name="TesteeTextBox">4</TextBox>
+
+                    <TextBlock Grid.Row="1" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10">Gyro Resolution</TextBlock>
+                    <TextBox Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" Margin="10" Name="GyroResolutionTextBox">2000</TextBox>
+
+                    <TextBlock Grid.Row="2" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10">AccelerometerResolution (in g)</TextBlock>
+                    <TextBox Grid.Row="2" Grid.Column="1" VerticalAlignment="Top" Margin="10" Name="AccelerometerResolution">2</TextBox>
+
+                    <TextBlock Grid.Row="3" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10">Is in Gym</TextBlock>
+                    <TextBox Grid.Row="3" Grid.Column="1" VerticalAlignment="Top" Margin="10" Name="IsInlab">Y</TextBox>
+                    
+                    <TextBlock Grid.Row="4" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10">Comment</TextBlock>
+                    <TextBox Grid.Row="4" Grid.Column="1"  Margin="10" Name="Comment"></TextBox>
+
+                    <TextBlock Grid.Row="5" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Name="ActivityTextBlock"></TextBlock>
+                </Grid>
+                
+                <TextBlock Grid.Row="0" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="10">Activity:</TextBlock>
+                <Border Grid.Row="1" Grid.Column="1" Margin="5">
+                    <StackPanel  Grid.Row="0" Grid.Column="3" Name="PanelOfActivities" Margin="0,-1,0,1"></StackPanel>                   
+                </Border>
+                
+
+                <Button Name="StartButton" Grid.Column="0" Grid.Row="2" Margin="20" IsEnabled="True" Click="StartButton_OnClick">Start</Button>
+                <Button Name="StopButton" Grid.Column="1" Margin="20,19,20,21" Grid.Row="2" IsEnabled="False" IsCancel="True" Click="StopButton_OnClick">Stop</Button>
+            </Grid>
+        </TabItem>
+        <TabItem Header="Activities information">
+            <UniformGrid Name="ActivitieesGrid" Columns="3" Rows="3"></UniformGrid>
+        </TabItem>
+        <TabItem Header="Port Settings">
+            <collectionGui:SerialPortSettingsUserControl x:Name="PortSettingsUserControl"/>
+        </TabItem>
+    
+    </TabControl>
+</Window>

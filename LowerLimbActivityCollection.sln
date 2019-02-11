@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionGUI", "CollectionGUI\CollectionGUI.csproj", "{E6FE014A-D724-4DAF-9669-51B4C9F5DA7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Editor", "Editor\Editor.csproj", "{AFE33C9D-4779-433C-8E4C-462FC9F1E620}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionCountinuesGUI", "CollectionCountinuesGUI\CollectionCountinuesGUI.csproj", "{4D1102A3-312B-4795-BFBB-C62AD7882E72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LowerLimbActivityDriver", "LowerLimbActivityDriver\LowerLimbActivityDriver.csproj", "{5B98A063-9271-4876-A11F-3478CEEDE494}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LowerLimbActivityTesting", "LowerLimbActivityTesting\LowerLimbActivityTesting.csproj", "{E82E1A62-2E93-4C14-AE47-3E5449C6FB03}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6FE014A-D724-4DAF-9669-51B4C9F5DA7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6FE014A-D724-4DAF-9669-51B4C9F5DA7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6FE014A-D724-4DAF-9669-51B4C9F5DA7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6FE014A-D724-4DAF-9669-51B4C9F5DA7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFE33C9D-4779-433C-8E4C-462FC9F1E620}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFE33C9D-4779-433C-8E4C-462FC9F1E620}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFE33C9D-4779-433C-8E4C-462FC9F1E620}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFE33C9D-4779-433C-8E4C-462FC9F1E620}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D1102A3-312B-4795-BFBB-C62AD7882E72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D1102A3-312B-4795-BFBB-C62AD7882E72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D1102A3-312B-4795-BFBB-C62AD7882E72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D1102A3-312B-4795-BFBB-C62AD7882E72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B98A063-9271-4876-A11F-3478CEEDE494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B98A063-9271-4876-A11F-3478CEEDE494}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B98A063-9271-4876-A11F-3478CEEDE494}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B98A063-9271-4876-A11F-3478CEEDE494}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E82E1A62-2E93-4C14-AE47-3E5449C6FB03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E82E1A62-2E93-4C14-AE47-3E5449C6FB03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E82E1A62-2E93-4C14-AE47-3E5449C6FB03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E82E1A62-2E93-4C14-AE47-3E5449C6FB03}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

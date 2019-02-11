@@ -1,0 +1,95 @@
+﻿<Window x:Class="LowerLimbActivityTesting.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        xmlns:charting="clr-namespace:System.Windows.Forms.DataVisualization.Charting;assembly=System.Windows.Forms.DataVisualization"
+        Title="MainWindow" Height="650" Width="900" Loaded="MainWindow_OnLoaded">
+    <TabControl>
+        <TabItem Header="Left">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <WindowsFormsHost Grid.Column="0" Grid.Row="0" Margin="5" >
+                    <charting:Chart x:Name="ChartLAcc1"/>
+                </WindowsFormsHost>
+
+                <WindowsFormsHost Grid.Column="1" Grid.Row="0" Margin="5" >
+                    <charting:Chart x:Name="ChartLGyr1"/>
+                </WindowsFormsHost>
+
+
+                <WindowsFormsHost Grid.Column="0" Grid.Row="1" Margin="5" >
+                    <charting:Chart x:Name="ChartLAcc2"/>
+                </WindowsFormsHost>
+
+                <WindowsFormsHost Grid.Column="1" Grid.Row="1" Margin="5" >
+                    <charting:Chart x:Name="ChartLGyr2"/>
+                </WindowsFormsHost>
+
+                <WindowsFormsHost Grid.Column="0" Grid.Row="2" Margin="5" >
+                    <charting:Chart x:Name="ChartLAcc3"/>
+                </WindowsFormsHost>
+
+                <WindowsFormsHost Grid.Column="1" Grid.Row="2" Margin="5" >
+                    <charting:Chart x:Name="ChartLGyr3"/>
+                </WindowsFormsHost>
+
+                <WindowsFormsHost Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Margin="5" >
+                    <charting:Chart x:Name="ChartLEMG"/>
+                </WindowsFormsHost>
+            </Grid>
+        </TabItem>
+        
+        <TabItem Header="Right">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <WindowsFormsHost Grid.Column="0" Grid.Row="0" Margin="5" >
+                    <charting:Chart x:Name="ChartRAcc1"/>
+                </WindowsFormsHost>
+
+                <WindowsFormsHost Grid.Column="1" Grid.Row="0" Margin="5" >
+                    <charting:Chart x:Name="ChartRGyr1"/>
+                </WindowsFormsHost>
+
+                <WindowsFormsHost Grid.Column="0" Grid.Row="1" Margin="5" >
+                    <charting:Chart x:Name="ChartRAcc2"/>
+                </WindowsFormsHost>
+
+                <WindowsFormsHost Grid.Column="1" Grid.Row="1" Margin="5" >
+                    <charting:Chart x:Name="ChartRGyr2"/>
+                </WindowsFormsHost>
+
+                <WindowsFormsHost Grid.Column="0" Grid.Row="2" Margin="5" >
+                    <charting:Chart x:Name="ChartRAcc3"/>
+                </WindowsFormsHost>
+
+                <WindowsFormsHost Grid.Column="1" Grid.Row="2" Margin="5" >
+                    <charting:Chart x:Name="ChartRGyr3"/>
+                </WindowsFormsHost>
+
+                <WindowsFormsHost Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Margin="5" >
+                    <charting:Chart x:Name="ChartREMG"/>
+                </WindowsFormsHost>
+            </Grid>
+        </TabItem>
+    </TabControl>
+    
+
+</Window>
